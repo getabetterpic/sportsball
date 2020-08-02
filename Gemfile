@@ -52,4 +52,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'app_component', path: 'components/app_component'
+path 'components' do
+  gem 'app_component'
+end
+
+gem "trueskill",
+    git: "https://github.com/benjaminleesmith/trueskill",
+    ref: "e404f45af5b3fb86982881ce064a9c764cc6a901"

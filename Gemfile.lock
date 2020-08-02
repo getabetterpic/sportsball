@@ -1,8 +1,17 @@
+GIT
+  remote: https://github.com/benjaminleesmith/trueskill
+  revision: e404f45af5b3fb86982881ce064a9c764cc6a901
+  ref: e404f45af5b3fb86982881ce064a9c764cc6a901
+  specs:
+    trueskill (1.0.0)
+
 PATH
-  remote: components/app_component
+  remote: components
   specs:
     app_component (0.1.0)
       rails (~> 5.1.7)
+      slim-rails (~> 3.2.0)
+      trueskill
 
 GEM
   remote: https://rubygems.org/
@@ -140,6 +149,13 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    slim (4.1.0)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 2.0.6, < 2.1)
+    slim-rails (3.2.0)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
+      slim (>= 3.0, < 5.0)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -152,6 +168,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    temple (0.8.2)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -190,6 +207,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  trueskill!
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
